@@ -11,3 +11,5 @@
 (live-load-config-file "scratch-conf.el")
 (live-load-config-file "highlight-tail-conf.el")
 (live-load-config-file "gist-conf.el")
+(live-load-config-file "switch-window-conf.el")
+(live-load-config-file "textmate-conf.el")

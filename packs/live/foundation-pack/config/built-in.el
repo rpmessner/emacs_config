@@ -1,3 +1,14 @@
+;; package
+(require 'package)
+(add-to-list 'package-archives
+             '("tromey" . "http://tromey.com/elpa/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+(package-initialize)
+
 ;;use file path to ensure buffer name uniqueness
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)

@@ -8,6 +8,10 @@
 ;; Line-wrapping
 (set-default 'fill-column 72)
 
+;; Column Width
+(setq tab-width 2)
+(setq-default tab-width 2)
+
 ;get rid of clutter
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -16,9 +20,11 @@
 ;remove bells
 (setq ring-bell-function 'ignore)
 
-(cond
- ((and (window-system) (eq system-type 'darwin))
-  (add-to-list 'default-frame-alist '(font . "Menlo-12"))))
+;; (cond
+;;  ((and (window-system) (eq system-type 'darwin))
+;;   (add-to-list 'default-frame-alist '(font . "Menlo-12"))))
+
+(set-frame-font "Inconsolata-14")
 
 ;; make fringe smaller
 (if (fboundp 'fringe-mode)
