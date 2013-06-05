@@ -9,7 +9,7 @@
 ;; (load-file (concat (live-pack-lib-dir) "solarized-definitions.el"))
 (live-add-pack-lib "emacs-color-theme-solarized")
 (require 'color-theme-solarized)
-(color-theme-solarized-dark)
+(color-theme-solarized-light)
 
 ;; (load-file (concat (live-pack-lib-dir) "blueberry.el"))
 ;; (color-theme-cyberpunk)

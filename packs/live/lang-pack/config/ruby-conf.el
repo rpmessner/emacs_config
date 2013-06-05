@@ -30,3 +30,5 @@
               '(lambda ()
                  (outline-minor-mode)
                  (setq outline-regexp " *\\(def \\|class\\|module\\|describe \\|it \\)")))
+
+(load-file "~/.emacs.d/lib/ruby-mode-indent-fix.el")
