@@ -12,3 +12,4 @@
 (live-load-config-file "actionscript-conf.el")
 (live-load-config-file "sass-mode.el")
 (live-load-config-file "js2-mode.el")
+(live-load-config-file "emblem-conf.el")
