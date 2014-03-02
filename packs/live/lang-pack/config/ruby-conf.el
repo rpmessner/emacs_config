@@ -8,8 +8,11 @@
 (add-to-list 'auto-mode-alist '("Capfile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Guardfile" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.thor\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru\\'" . ruby-mode))
+
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . rhtml-mode))
 
 (defun ruby-interpolate ()
   "In a double quoted string, interpolate."
@@ -29,6 +32,7 @@
 (add-hook 'ruby-mode-hook
               '(lambda ()
                  (outline-minor-mode)
+                 (add-hook 'before-save-hook 'whitespace-cleanup nil t)
                  (setq outline-regexp " *\\(def \\|class\\|module\\|describe \\|it \\)")))
 
 (load-file "~/.emacs.d/lib/ruby-mode-indent-fix.el")

@@ -195,7 +195,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes (quote ("8eaa3bce3c618cd81a318fcf2d28c1cd21278531f028feb53186f6387547dfb4" default)))
+ '(custom-safe-themes (quote ("cf08ae4c26cacce2eebff39d129ea0a21c9d7bf70ea9b945588c1c66392578d1" "7f1263c969f04a8e58f9441f4ba4d7fb1302243355cb9faecb55aec878a06ee9" "c7359bd375132044fe993562dfa736ae79efc620f68bab36bd686430c980df1c" "3341f6db5ac17e4174f7488c40676e7f0464f1e88519a59303dc7e7774245bbf" "d0ff5ea54497471567ed15eb7279c37aef3465713fb97a50d46d95fe11ab4739" "8eaa3bce3c618cd81a318fcf2d28c1cd21278531f028feb53186f6387547dfb4" default)))
  '(ruby-deep-arglist nil)
  '(ruby-deep-indent-paren nil)
  '(sclang-auto-scroll-post-buffer t)

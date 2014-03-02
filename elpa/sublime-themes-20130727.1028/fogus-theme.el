@@ -1,9 +1,21 @@
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 ;; ---------------------------
 ;;
-;; Fogus: A bluecolor theme foro Emacs24+
+;; Fogus: An icy dark blue color theme
 ;;
 ;; ----------------------------
-
 
 (unless (>= 24 emacs-major-version)
   (error "requires Emacs 24 or later."))
@@ -45,8 +57,6 @@
    ;; ---------------- Code Highlighting ---------------
    ;; Builtin
    `(font-lock-builtin-face ((t (:foreground ,fogus-light-blue))))
-   ;; Constants
-   `(font-lock-constant-face ((t (:foreground ,fogus-green))))
    ;; Comments
    `(font-lock-comment-face ((t (:foreground ,fogus-blue))))
    ;; Function names
@@ -65,7 +75,7 @@
    `(powerline-active1 ((t (:background ,fogus-off-white :foreground ,fogus-background))))))
 
 
-;;;###autoload
+;;;###Autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name)))

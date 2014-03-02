@@ -25,6 +25,7 @@
 ;;   (add-to-list 'default-frame-alist '(font . "Menlo-12"))))
 
 (set-frame-font "Inconsolata-14")
+;; (set-frame-font "Source Code Pro-12")
 
 ;; make fringe smaller
 (if (fboundp 'fringe-mode)

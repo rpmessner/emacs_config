@@ -1,9 +1,8 @@
 (live-add-pack-lib "yasnippet")
-(require 'yasnippet)
-(setq live-yasnippet-dir (concat live-etc-dir "snippets"))
-(setq yas/snippet-dirs `(,live-yasnippet-dir))
-(yas/global-mode 1)
+(require 'yasnippet)1
+(setq yas/trigger-key (kbd "C-c 1"))
+(yas/initialize)  
 
-(defun live-reload-snippets ()
-  (interactive)
-  (yas/load-directory live-yasnippet-dir))
+;; This is where your snippets will lie.
+(setq yas/root-directory '("~/.emacs.d/etc/snippets"))
+(mapc 'yas/load-directory yas/root-directory)

@@ -19,6 +19,7 @@
 (live-load-config-file "shell-conf.el")
 (live-load-config-file "spelling-conf.el")
 (live-load-config-file "lisp-conf.el")
+(live-load-config-file "powerline-conf.el")
 
 (when (eq system-type 'darwin)
   (live-load-config-file "osx.el"))

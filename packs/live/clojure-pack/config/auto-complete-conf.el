@@ -8,6 +8,12 @@
 
 (setq ac-comphist-file (concat live-tmp-dir "ac-comphist.dat"))
 
+(add-hook 'emacs-lisp-mode-hook 'ac-emacs-lisp-mode-setup)
+(add-hook 'c-mode-common-hook 'ac-cc-mode-setup)
+(add-hook 'ruby-mode-hook 'ac-ruby-mode-setup)
+(add-hook 'css-mode-hook 'ac-css-mode-setup)
+(add-hook 'auto-complete-mode-hook 'ac-common-setup)
+
 (global-auto-complete-mode t)
 (setq ac-auto-show-menu t)
 (setq ac-dwim t)
@@ -26,7 +32,7 @@
 (dolist (mode '(magit-log-edit-mode log-edit-mode org-mode text-mode haml-mode
                 sass-mode yaml-mode csv-mode espresso-mode haskell-mode
                 html-mode nxml-mode sh-mode smarty-mode clojure-mode
-                lisp-mode textile-mode markdown-mode tuareg-mode))
+                lisp-mode textile-mode markdown-mode tuareg-mode objc-mode))
   (add-to-list 'ac-modes mode))
 
 
