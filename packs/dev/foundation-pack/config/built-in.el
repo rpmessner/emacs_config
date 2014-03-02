@@ -1,3 +1,14 @@
+;; package
+(require 'package)
+(add-to-list 'package-archives
+             '("tromey" . "http://tromey.com/elpa/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+(package-initialize)
+
 ;;use file path to ensure buffer name uniqueness
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
@@ -76,7 +87,19 @@
       (let ((whitespace-style '(trailing empty)) )
         (whitespace-cleanup))))
 
-(add-hook 'before-save-hook 'live-cleanup-whitespace)
+;; (add-hook 'before-save-hook 'live-cleanup-whitespace)
+
+;; function to add newline above and indent the cursor
+(defun insert-and-indent-line-above ()
+  (interactive)
+  (push-mark)
+  (let*
+    ((ipt (progn (back-to-indentation) (point)))
+     (bol (progn (move-beginning-of-line 1) (point)))
+     (indent (buffer-substring bol ipt)))
+    (newline)
+    (previous-line)
+    (insert indent)))
 
 ;; savehist keeps track of some history
 (setq savehist-additional-variables

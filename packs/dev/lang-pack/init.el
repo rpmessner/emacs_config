@@ -14,3 +14,7 @@
 (live-load-config-file "glsl-conf.el")
 (live-load-config-file "extempore-conf.el")
 (live-load-config-file "haskell-conf.el")
+(live-load-config-file "coffee-conf.el")
+(live-load-config-file "haml-conf.el")
+(live-load-config-file "sass-conf.el")
+(live-load-config-file "web-mode-conf.el")

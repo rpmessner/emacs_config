@@ -8,6 +8,10 @@
 ;; Line-wrapping
 (set-default 'fill-column 72)
 
+;; Column Width
+(setq tab-width 2)
+(setq-default tab-width 2)
+
 ;get rid of clutter
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
@@ -38,7 +42,7 @@
    ((eq system-type 'darwin)
     (live-set-default-font font-string))))
 
-(live-set-default-darwin-font "Menlo-12")
+(live-set-default-darwin-font "Inconsolata-14")
 
 ;; make fringe smaller
 (if (fboundp 'fringe-mode)

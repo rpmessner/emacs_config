@@ -39,6 +39,10 @@
                  (setq outline-regexp " *\\(def \\|class\\|module\\|describe \\|it \\)")))
 
 (add-hook 'ruby-mode-hook
+          '(lambda ()
+                 (add-hook 'before-save-hook 'live-cleanup-whitespace nil t)))
+
+(add-hook 'ruby-mode-hook
           (lambda ()
             (define-key ruby-mode-map "{" nil)
             (define-key ruby-mode-map "}" nil)))

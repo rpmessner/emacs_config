@@ -16,6 +16,7 @@
 (live-add-pack-lib "pkg-info")
 (require 'pkg-info)
 
+(live-load-config-file "toggle-fullscreen.el")
 (live-load-config-file "backup-dir-conf.el")
 (live-load-config-file "util-fns.el")
 (live-load-config-file "built-in.el")
@@ -33,7 +34,8 @@
 (live-load-config-file "shell-conf.el")
 (live-load-config-file "spelling-conf.el")
 (live-load-config-file "lisp-conf.el")
-(live-load-config-file "win-switch-conf.el")
+(live-load-config-file "switch-window-conf.el")
+(live-load-config-file "textmate-conf.el")
 (live-load-config-file "zone-conf.el")
 (live-load-config-file "monkey-patch.el")
 (live-load-config-file "live.el")

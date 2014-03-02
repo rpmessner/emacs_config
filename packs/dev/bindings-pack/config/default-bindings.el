@@ -182,7 +182,8 @@
 (global-set-key (kbd "C-M-]") 'scroll-other-window)
 (global-set-key (kbd "C-M-[") 'scroll-other-window-down)
 
-
+;;insert line above
+(global-set-key (kbd "C-i") 'insert-and-indent-line-above)
 
 ;;fast vertical naviation
 (global-set-key  (kbd "M-U") (lambda () (interactive) (forward-line -10)))
@@ -219,9 +220,6 @@
 (global-set-key (kbd "C-x O") (lambda () (interactive) (other-window -1))) ;; back one
 (global-set-key (kbd "C-x C-o") (lambda () (interactive) (other-window 2))) ;; forward two
 
-;; If you want to be able to M-x without meta
-(global-set-key (kbd "C-x C-m") 'execute-extended-command)
-
 ;; Magit
 (global-set-key (kbd "C-x g") 'magit-status)
 
@@ -232,13 +230,13 @@
       (occur (if isearch-regexp isearch-string (regexp-quote isearch-string))))))
 
 ;; Ace jump mode
-(global-set-key (kbd "C-o") 'ace-jump-mode)
+(global-set-key (kbd "C-u") 'ace-jump-mode)
 
 ;; Show documentation/information with M-RET
 (define-key lisp-mode-shared-map (kbd "M-RET") 'live-lisp-describe-thing-at-point)
 (define-key cider-repl-mode-map (kbd "M-RET") 'cider-doc)
 (define-key cider-mode-map (kbd "M-RET") 'cider-doc)
 
-(global-set-key (kbd "C-x o") 'win-switch-dispatch)
+(global-set-key (kbd "C-x o") 'switch-window)
 
 (global-set-key (kbd "C-x !") 'live-server-kill-terminal)
