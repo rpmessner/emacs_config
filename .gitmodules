@@ -42,6 +42,10 @@
         path = packs/dev/foundation-pack/vendor/submodules/elisp-slime-nav
         url = git://github.com/purcell/elisp-slime-nav.git
         ignore = untracked
+[submodule "packs/dev/clojure-pack/vendor/submodules/smartparens"]
+        path = packs/dev/clojure-pack/vendor/submodules/smartparens
+        url = git://github.com/Fuco1/smartparens.git
+        ignore = untracked
 [submodule "packs/dev/power-pack/vendor/submodules/gist"]
         path = packs/dev/power-pack/vendor/submodules/gist
         url = git://github.com/defunkt/gist.el.git

@@ -139,8 +139,8 @@
 (global-set-key (kbd "M-y") 'browse-kill-ring)
 
 ;;make C-] and M-] cut and copy respectively
-(global-set-key (kbd "C-]") 'kill-region)
-(global-set-key (kbd "M-]") 'kill-ring-save)
+(global-set-key (kbd "M-x") 'kill-region)
+(global-set-key (kbd "M-c") 'kill-ring-save)
 
 ;; undo
 (global-set-key (kbd "C-M-_") 'undo-tree-undo)
@@ -181,6 +181,10 @@
 ;;scroll other window
 (global-set-key (kbd "C-M-]") 'scroll-other-window)
 (global-set-key (kbd "C-M-[") 'scroll-other-window-down)
+
+;;indent region
+(global-set-key (kbd "M-[") 'textmate-shift-left)
+(global-set-key (kbd "M-]") 'textmate-shift-right)
 
 ;;insert line above
 (global-set-key (kbd "C-i") 'insert-and-indent-line-above)
