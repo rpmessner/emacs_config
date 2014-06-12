@@ -110,3 +110,4 @@
       ;; keep the home clean
       savehist-file (concat live-tmp-dir "savehist"))
 (savehist-mode t)
+(server-start)

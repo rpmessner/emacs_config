@@ -105,3 +105,4 @@ it. Returns the buffer name of the newly created terminal."
 ;; find the current terminal in the ring
 ;; swap the current terminal with the next terminal in the ring
 ;; popwin display the next terminal
+(server-start)
